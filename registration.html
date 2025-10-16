@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sports Registartion form </title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #56CCF2, #2F80ED);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      background: #fff;
+      padding: 30px 40px;
+      border-radius: 15px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+      width: 350px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 24px;
+      margin-bottom: 20px;
+      color: #2F80ED;
+      text-transform: uppercase;
+    }
+
+    label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+      text-align: left;
+    }
+
+    input[type="text"], 
+    input[type="password"], 
+    select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+
+    input[type="submit"] {
+      background-color: #2F80ED;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      width: 100%;
+      transition: background 0.3s ease;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #1B5CB8;
+    }
+
+    marquee {
+      font-size: 18px;
+      color: #ff4500;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <marquee>Sports Day Event Registration</marquee>
+    <h1>Login & Register</h1>
+<form action="success.html" method="post">
+      <label for="username">Name:</label>
+      <input type="text" id="username" name="username" placeholder="Enter your name" required>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+      <label for="sports">Select Sport:</label>
+      <select id="sports" name="sports" required>
+        <option value="">--Choose a Sport--</option>
+        <option value="cricket">Cricket</option>
+        <option value="football">Football</option>
+        <option value="basketball">Basketball</option>
+        <option value="badminton">Badminton</option>
+        <option value="volleyball">Volleyball</option>
+        <option value="athletics">Athletics</option>
+      </select>
+
+      <input type="submit" value="Register">
+    </form>
+  </div>
+</body>
+</html>
